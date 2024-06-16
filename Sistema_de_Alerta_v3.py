@@ -2,7 +2,7 @@ import requests
 import win32com.client as win32
 
 #API OPEN WHEATER
-API_KEY = '0ef015b8881e07d70e1bf4322b77d20b'
+API_KEY = '0ef015b8881e07d70e1bf4322***'
 CITY = 'Caxias do Sul'
 THRESHOLD = 2  # Limite de chuva forte em mm
 
@@ -38,13 +38,13 @@ def check_heavy_rain(forecast, threshold):
 #SEND MAIL
 def send_email_with_weather_alerts(alerts):
     # Configurações do email
-    sender_email = "davi.pristo@outlook.com"  # Substitua pelo seu email
+    sender_email = "mail.test@mail.com"  #
     recipients = [
-        "davi.pristo@outlook.com",
-        "matheus.pereira@aedb.br",
-        "joao.carneiro@aedb.br",
-        "thiagode.pereira@aedb.br",
-        "caio.avelar@aedb.br"
+        "mail.test@mail.com",
+        "mail.test@mail.com",
+        "mail.test@mail.com",
+        "mail.test@mail.com",
+        "mail.test@mail.com"
     ]
     subject = "Alerta Automático de Chuva Forte"
 
